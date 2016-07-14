@@ -1,0 +1,6 @@
+site_name: Transaction history
+theme: readthedocs
+
+pages:
+    - About: 'index.md'
+    - Usage: 'usage.md'
