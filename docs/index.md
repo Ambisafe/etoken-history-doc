@@ -8,34 +8,38 @@ Service deployed on <https://etoken-history.ambisafe.co>
 To store transaction - **POST /tx** with body:  
 1) **Transfer** event must contain **symbol** field
 ```json
-{  
-  "from":"0x1ff21eca1c3ba96ed53783ab9c92ffbf77862584",
+{
+  "from":"0x7c60f73fbf669ab9df578c70c25a5c31788720ea",
   "name":"Transfer",
   "reference":"",
-  "transactionHash":"0x06fd869e881d9015d801a7b01540c57bcb386db0c5c2e2d31b4711a97ac5b9df",
-  "timestamp":1465890273,
-  "value":111,
-  "blockNumber":100,
+  "transactionHash":"0x10b3aa77a76fd6560c60379223dd1a4473d9232efdced08100a0a44f7fcc153f",
+  "timestamp":1468517882,
+  "value":1,
+  "blockNumber":1884807,
+  "to":"0xe51e53a8e678caf0e6dbcbf4f76d39cad9453595",
+  "confirmations":1,
+  "version":1,
+  "logIndex":15,
   "symbol":"EXMPL",
-  "to":"0x53786e5722f854a62783395dcdc27d633a9b063e",
-  "logIndex":1,
-  "transactionIndex":0
+  "transactionIndex":12
 }
 ```
 2) **TransferToICAP** must contain **icap** field
 ```json
 {
-  "from": "0x1ff21eca1c3ba96ed53783ab9c92ffbf77862584",
-  "name": "TransferToICAP",
-  "reference": "",
-  "transactionHash": "0x06fd869e881d9015d801a7b01540c57bcb386db0c5c2e2d31b4711a97ac5b9df",
-  "timestamp": 1465890273,
-  "value": 111,
-  "blockNumber": 100,
-  "to": "0x53786e5722f854a62783395dcdc27d633a9b063e",
-  "logIndex": 2,
-  "icap": "XE80EXMAMBI0DIMA0HI0",
-  "transactionIndex": 0
+  "from":"0x7c60f73fbf669ab9df578c70c25a5c31788720ea",
+  "name":"TransferToICAP",
+  "reference":"",
+  "transactionHash":"0x10b3aa77a76fd6560c60379223dd1a4473d9232efdced08100a0a44f7fcc153f",
+  "timestamp":1468517882,
+  "value":1,
+  "blockNumber":1884807,
+  "to":"0xe51e53a8e678caf0e6dbcbf4f76d39cad9453595",
+  "confirmations":1,
+  "version":1,
+  "logIndex":15,
+  "icap":"XE80EXMAMBI0DIMA0HI0",
+  "transactionIndex":12
 }
 ```
 
@@ -52,30 +56,34 @@ Response will be like:
   "total": 2,
   "result": [
     {
-      "from": "0x1ff21eca1c3ba96ed53783ab9c92ffbf77862584",
-      "name": "TransferToICAP",
-      "reference": "",
-      "transactionHash": "0x06fd869e881d9015d801a7b01540c57bcb386db0c5c2e2d31b4711a97ac5b9df",
-      "timestamp": 1465890273,
-      "value": 111,
-      "blockNumber": 104,
-      "to": "0x53786e5722f854a62783395dcdc27d633a9b063e",
-      "logIndex": 2,
-      "icap": "XE80EXMAMBI0DIMA0HI0",
-      "transactionIndex": 0
+      "from":"0x7c60f73fbf669ab9df578c70c25a5c31788720ea",
+      "name":"TransferToICAP",
+      "reference":"",
+      "transactionHash":"0x10b3aa77a76fd6560c60379223dd1a4473d9232efdced08100a0a44f7fcc153f",
+      "timestamp":1468517882,
+      "value":1,
+      "blockNumber":1884807,
+      "to":"0xe51e53a8e678caf0e6dbcbf4f76d39cad9453595",
+      "confirmations":1,
+      "version":1,
+      "logIndex":15,
+      "icap":"XE80EXMAMBI0DIMA0HI0",
+      "transactionIndex":12
     },
     {
-      "from": "0x1ff21eca1c3ba96ed53783ab9c92ffbf77862584",
-      "name": "Transfer",
-      "reference": "",
-      "transactionHash": "0x06fd869e881d9015d801a7b01540c57bcb386db0c5c2e2d31b4711a97ac5b9df",
-      "timestamp": 1465890273,
-      "value": 111,
-      "blockNumber": 104,
-      "symbol": "EXMPL",
-      "to": "0x53786e5722f854a62783395dcdc27d633a9b063e",
-      "logIndex": 1,
-      "transactionIndex": 0
+      "from":"0x7c60f73fbf669ab9df578c70c25a5c31788720ea",
+      "name":"Transfer",
+      "reference":"",
+      "transactionHash":"0x10b3aa77a76fd6560c60379223dd1a4473d9232efdced08100a0a44f7fcc153f",
+      "timestamp":1468517882,
+      "value":1,
+      "blockNumber":1884807,
+      "to":"0xe51e53a8e678caf0e6dbcbf4f76d39cad9453595",
+      "confirmations":1,
+      "version":1,
+      "logIndex":15,
+      "symbol":"EXMPL",
+      "transactionIndex":12
     }
   ],
   "nextRequest": null
@@ -93,31 +101,35 @@ You can get all transactions by ICAP - **GET /icap/{icap}**.
   "total": 5,
   "result": [
     {
-      "from": "0x1ff21eca1c3ba96ed53783ab9c92ffbf77862584",
-      "name": "TransferToICAP",
-      "reference": "",
-      "transactionHash": "0x06fd869e881d9015d801a7b01540c57bcb386db0c5c2e2d31b4711a97ac5b9df",
-      "timestamp": 1465890273,
-      "value": 111,
-      "blockNumber": 100,
-      "to": "0x53786e5722f854a62783395dcdc27d633a9b063e",
-      "logIndex": 2,
-      "icap": "XE80EXMAMBI0DIMA0HI0",
-      "transactionIndex": 0
+      "from":"0x7c60f73fbf669ab9df578c70c25a5c31788720ea",
+      "name":"TransferToICAP",
+      "reference":"",
+      "transactionHash":"0x10b3aa77a76fd6560c60379223dd1a4473d9232efdced08100a0a44f7fcc153f",
+      "timestamp":1468517882,
+      "value":1,
+      "blockNumber":1884807,
+      "to":"0xe51e53a8e678caf0e6dbcbf4f76d39cad9453595",
+      "confirmations":1,
+      "version":1,
+      "logIndex":15,
+      "icap":"XE80EXMAMBI0DIMA0HI0",
+      "transactionIndex":12
     },
     {...},
     {
-      "from": "0x1ff21eca1c3ba96ed53783ab9c92ffbf77862584",
-      "name": "TransferToICAP",
-      "reference": "",
-      "transactionHash": "0x06fd869e881d9015d801a7b01540c57bcb386db0c5c2e2d31b4711a97ac5b9df",
-      "timestamp": 1465890273,
-      "value": 111,
-      "blockNumber": 104,
-      "to": "0x53786e5722f854a62783395dcdc27d633a9b063e",
-      "logIndex": 2,
-      "icap": "XE80EXMAMBI0DIMA0HI0",
-      "transactionIndex": 0
+      "from":"0x1ff21eca1c3ba96ed53783ab9c92ffbf77862584",
+      "name":"TransferToICAP",
+      "reference":"",
+      "transactionHash":"0x06fd869e881d9015d801a7b01540c57bcb386db0c5c2e2d31b4711a97ac5b9df",
+      "timestamp":1465890273,
+      "value":111,
+      "blockNumber":1884806,
+      "to":"0xe51e53a8e678caf0e6dbcbf4f76d39cad9453595",
+      "confirmations":1,
+      "version":1,
+      "logIndex":15,
+      "icap":"XE80EXMAMBI0DIMA0HI0",
+      "transactionIndex":12
     }
   ],
   "nextRequest": null
