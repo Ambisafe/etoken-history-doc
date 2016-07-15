@@ -1,6 +1,2 @@
 site_name: EToken History Docs
 theme: readthedocs
-
-pages:
-    - About: 'index.md'
-    - Usage: 'usage.md'
