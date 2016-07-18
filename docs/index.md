@@ -1,3 +1,6 @@
+<a href="https://www.ambisafe.co/">![test](img/logo_red.png)</a>
+**********
+
 # About EToken History service
 Service to store and retrieve transactions for EToken. Currently for **Transfer** and **TransferToICAP** events.  
 Service deployed on <https://etoken-history.ambisafe.co>
